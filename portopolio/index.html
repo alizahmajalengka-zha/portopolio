@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alizah | Software Engineer & SQA Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="container">
+        <a href="#" class="logo">Alizah<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="mailto:Alizah.majalengka@gmail.com" class="btn-contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-container container">
+        <div class="hero-content">
+            <h1>Building Systems,<br><span class="highlight">Ensuring Quality.</span></h1>
+            <p class="hero-subtitle">Software Engineer & SQA Specialist | Digitalization Project Expert</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">Explore My Work</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="alizah.jpeg" alt="Alizah Profile">
+                <div class="image-bg-accent"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section white-bg">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-accent"></div>
+        </div>
+        <div class="about-content">
+            <p>I am a seasoned professional in manufacturing systems technology with over a decade of experience across Garment Engineering, Data Analysis, Software Engineering, and Software Quality Assurance. My career is defined by a commitment to transforming complex manual manufacturing processes into streamlined, data-driven digital solutions through meticulous planning and structured development.
+            My professional foundation began at PT Gistex Garment Indonesia (2013–2017) in Garment Engineering & Data Analysis, where I specialized in analyzing operational bottlenecks and designing robust system architectures. I then joined PT Shoetown Ligung Indonesia, progressing from Software Engineer Staff (2019–2023) to Software Engineer Specialist (2023–2025). In these roles, I focused on the full development lifecycle, building various Web and Android applications—such as Smart TPM, OEE Tracking, and Smart Mixing—while ensuring comprehensive technical documentation and system mapping for scalable implementation.
+            My work is characterized by delivering significant operational impact, including developing tools that have reduced data processing time by up to 99% and minimized manual errors through automated system integrations.
+            Since December 2025, I have transitioned into Software Quality Assurance (SQA). Leveraging my extensive background as both an engineer and an analyst, I now focus on ensuring the reliability and performance of enterprise-scale applications, such as the Apollo Management System, through detailed functional testing, Katalon automation, and JMeter performance analysis to support up to 1,500 concurrent users.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Portfolio Projects</h2>
+            <div class="title-accent"></div>
+        </div>
+        
+        <div class="filter-group">
+            <button class="filter-btn active" onclick="filterSelection('all')">All</button>
+            <button class="filter-btn" onclick="filterSelection('dev')">Digitalization</button>
+            <button class="filter-btn" onclick="filterSelection('qa')">QA Testing</button>
+        </div>
+
+        <div class="project-grid" id="projectContainer"></div>
+    </div>
+</section>
+
+<div id="projectModal" class="modal" onclick="closeModalOnOutsideClick(event)">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
