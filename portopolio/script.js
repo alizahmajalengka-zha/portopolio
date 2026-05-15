@@ -141,7 +141,7 @@ const projects = [
         shortDesc: "End-to-end QA using Katalon automation and JMeter benchmarking.",
         fullDesc: "Comprehensive QA lifecycle including manual testing, Katalon automation for regression, and JMeter load testing for 1,500 concurrent users.",
         tags: ["Katalon", "JMeter", "Performance"],
-        image : "img/qa.jpeg"
+        image : "img/qa.jpg"
     }
 ];
 
